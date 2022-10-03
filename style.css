@@ -1,0 +1,248 @@
+body {
+    margin: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    background-size: cover;
+    text-align: center;
+    color: black;
+    font-family: 'right_chalkregular', serif;
+}
+
+.title {
+    margin: 0;
+    color: azure;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.restart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    font-size: 8vmin;
+    font-weight: normal;
+    color: azure;
+}
+
+#message {
+    font-size: 3vmin;
+    font-weight: normal;
+    margin-bottom: 3vh;
+}
+
+section.board {
+    display: grid;
+    /* align-items: flex-start; */
+    grid-template-rows: repeat(5, 18vmin);
+    grid-template-columns: repeat(4, 18vmin);
+    grid-gap: 0vmin;
+    /* background-color: black; */
+}
+
+.drop {
+    font-size: 13vmin;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.square {
+    font-size: 13vmin;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#score {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 20vw;
+    font-size: 3vmin;
+}
+
+.drop {
+    display: flex
+}
+#top-pad {
+    padding: 25px 50px 75px 100px;
+  }
+  
+#sq0 {
+    /* border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913); */
+
+}
+
+#sq1 {
+    /* border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913); */
+}
+
+#sq2 {
+    /* border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913); 
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913); */
+}
+
+#sq3 {
+    /* border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913); 
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913); */
+}
+
+#sq4 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq5 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq6 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq7 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq8 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq9 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq10 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq11 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq12 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq13 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq14 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq15 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq16 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq17 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq18 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq19 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq20 {
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+button {
+    background-color: rgba(79, 79, 79, 0);
+    color: rgba(255, 254, 234, 0.913);
+    font-family: 'right_chalkregular', serif;
+    font-size: 3vmin;
+    font-weight: normal;
+    outline: none;
+    border: 2px solid rgba(255, 254, 234, 0.913);
+    border-radius: 1vmin;
+}
+
+button:hover {
+    background-color: rgba(255, 254, 234, 0.913);
+    color: rgba(79, 79, 79);
+    cursor: pointer;
+}
