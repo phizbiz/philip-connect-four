@@ -1,15 +1,37 @@
 let colors = ['red', 'yellow']
-
-let button = document.getElementById('btn')
+const colorsLength = colors.length
+let button = document.getElementById('btn1')
 
 button.addEventListener('click', function () {
   const randomColor = colors[Math.floor(Math.random() * colors.length)]
-  let sq = document.getElementById('sq4', 'sq8', 'sq12', 'sq16')
-  sq4.style.background = randomColor
-  sq8.style.background = randomColor
-  sq12.style.background = randomColor
   sq16.style.background = randomColor
+  sq12.style.background = randomColor
+  sq8.style.background = randomColor
+  sq4.style.background = randomColor
 })
+
+// button.addEventListener('click', function () {
+//   if player_one
+//   const randomColor = colors[Math.floor(Math.random() * colors.length)]
+//   sq16.style.background = randomColor
+//   sq12.style.background = randomColor
+//   sq8.style.background = randomColor
+//   sq4.style.background = randomColor
+// })
+
+// function dropPiece() {
+//   let sq = document.getElementById[('sq4', 'sq8', 'sq12', 'sq16')]
+//   if (sq16.style.background === 'black') {
+//     sq16.style.background = randomColor
+//   } else if (sq12.style.background === 'black') {
+//     sq12.style.background = randomColor
+//   } else if (sq8.style.background === 'black') {
+//     sq8.style.background = randomColor
+//   } else {
+//     sq4.style.background = randomColor
+//   }
+// }
+// dropPiece()
 
 // let color = ['#FFFF00', '#FF0000']
 // let i = 0
