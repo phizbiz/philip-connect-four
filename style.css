@@ -83,32 +83,32 @@ section.board {
   }
 
 #sq0 {
-    border-top: 4px solid rgba(255, 254, 234, 0.913);
-    border-right: 4px solid rgba(255, 255, 255, 0.913);
-    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
-    border-left: 4px solid rgba(255, 254, 234, 0.913);
+    /* border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913); */
+    /* border-bottom: 4px solid rgba(255, 255, 255, 0.913); */
+    /* border-left: 4px solid rgba(255, 254, 234, 0.913); */
 
 }
 
 #sq1 {
-    border-top: 4px solid rgba(255, 254, 234, 0.913);
-    border-right: 4px solid rgba(255, 255, 255, 0.913);
-    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
-    border-left: 4px solid rgba(255, 254, 234, 0.913);
+    /* border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913); */
+    /* border-bottom: 4px solid rgba(255, 255, 255, 0.913); */
+    /* border-left: 4px solid rgba(255, 254, 234, 0.913); */
 }
 
 #sq2 {
-    border-top: 4px solid rgba(255, 254, 234, 0.913);
-    border-right: 4px solid rgba(255, 255, 255, 0.913); 
-    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
-    border-left: 4px solid rgba(255, 254, 234, 0.913);
+    /* border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);  */
+    /* border-bottom: 4px solid rgba(255, 255, 255, 0.913); */
+    /* border-left: 4px solid rgba(255, 254, 234, 0.913); */
 }
 
 #sq3 {
-    border-top: 4px solid rgba(255, 254, 234, 0.913);
-    border-right: 4px solid rgba(255, 255, 255, 0.913); 
-    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
-    border-left: 4px solid rgba(255, 254, 234, 0.913);
+    /* border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);  */
+    /* border-bottom: 4px solid rgba(255, 255, 255, 0.913); */
+    /* border-left: 4px solid rgba(255, 254, 234, 0.913); */
 }
 
 #sq4 {
@@ -116,6 +116,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq5 {
@@ -123,6 +125,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq6 {
@@ -130,6 +134,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq7 {
@@ -137,6 +143,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq8 {
@@ -145,6 +153,7 @@ section.board {
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
     background-color: black;
+    border-radius: 50%;
 }
 
 #sq9 {
@@ -152,6 +161,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%; 
 }
 
 #sq10 {
@@ -159,6 +170,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq11 {
@@ -166,6 +179,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq12 {
@@ -173,6 +188,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq13 {
@@ -180,6 +197,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq14 {
@@ -187,6 +206,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq15 {
@@ -194,6 +215,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq16 {
@@ -201,6 +224,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq17 {
@@ -208,6 +233,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq18 {
@@ -215,6 +242,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq19 {
@@ -222,6 +251,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 #sq20 {
@@ -229,6 +260,8 @@ section.board {
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
+    border-radius: 50%;
 }
 
 button {

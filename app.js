@@ -4,8 +4,11 @@ let button = document.getElementById('btn')
 
 button.addEventListener('click', function () {
   const randomColor = colors[Math.floor(Math.random() * colors.length)]
-  let sq = document.getElementById('sq8')
+  let sq = document.getElementById('sq4', 'sq8', 'sq12', 'sq16')
+  sq4.style.background = randomColor
   sq8.style.background = randomColor
+  sq12.style.background = randomColor
+  sq16.style.background = randomColor
 })
 
 // let color = ['#FFFF00', '#FF0000']
