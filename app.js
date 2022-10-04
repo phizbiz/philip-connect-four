@@ -1,9 +1,70 @@
-const sq0 = document.getElementById('sq0')
-const square = document.getElementById('square')
+let colors = ['red', 'yellow']
 
-sq0.addEventListener('click', () => {
-  console.log('works')
+let button = document.getElementById('btn')
+
+button.addEventListener('click', function () {
+  const randomColor = colors[Math.floor(Math.random() * colors.length)]
+  let sq = document.getElementById('sq8')
+  sq8.style.background = randomColor
 })
+
+// let color = ['#FFFF00', '#FF0000']
+// let i = 0
+// document.querySelector('button').addEventListener('click', function () {
+//   i = 1 < color.length ? ++i : 0
+//   document.querySelector('div').style.background = color[i]
+// })
+//////////////
+//Tuesday
+///////////////////
+// let playerR = 'R'
+// let playerY = 'Y'
+// let playerOne = playerR
+// let board
+// let gameOver = false
+// let rows = 5
+// let columns = 4
+// const sq0 = document.getElementById('sq0')
+// const square = document.getElementById('square')
+
+// sq0.addEventListener('click', () => {
+//   document.querySelector('square')('red-piece')
+//   console.log('works')
+// })
+
+////////////
+// startGame()
+
+// function startGame() {
+//   let square = document.createElement('div')
+//   //   square.id = div.id
+//   square.classList.add('square')
+//   square.addEventListener('click', assignPiece)
+//   document.getElementById('game').append(square)
+//   console.log('working')
+// }
+// // assignPiece()
+// function assignPiece() {
+//   //   if (gameOver) {
+//   //     return
+//   //   }
+
+//   //  for (var i = 4; i > 0; i--) { alert(i); }
+//   let square = this
+//   if ((playerOne = playerR)) {
+//     square.classList.add('red-circle')
+//   } else {
+//     square.classList.add('yellow-circle')
+//   }
+// }
+
+// function setPiece {
+//     if (gameOver) {
+//         return;
+//     }
+// let coords =
+
+// }
 
 // function click() {
 //    document.getElementById(".square").

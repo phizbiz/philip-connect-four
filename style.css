@@ -46,51 +46,25 @@ h1 {
 
 section.board {
     display: grid;
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap; */
-    /* grid-template-rows: repeat(5, 18vmin);
+    /* align-items: flex-start; */
+    grid-template-rows: repeat(5, 18vmin);
     grid-template-columns: repeat(4, 18vmin);
-    grid-gap: 0vmin; */
-    /*background-color: black; */
-}
-section.board2{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-section.board3{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-section.board4{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    grid-gap: 0vmin;
+    /* background-color: black; */
 }
 
-/* .drop {
+.drop {
     font-size: 13vmin;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-} */
+}
 
 .square {
     font-size: 13vmin;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap; */
 }
 
 #score {
@@ -101,73 +75,50 @@ section.board4{
     font-size: 3vmin;
 }
 
-.arrowButton {
-    max-width: 82px;
-    max-height: 82px;
-    /* display: grid */
-    vertical-align: middle;
-}
-
-/* .drop {
+.drop {
     display: flex
-    flex-shrink: 2
-} */
-
+}
 #top-pad {
     padding: 25px 50px 75px 100px;
   }
 
 #sq0 {
-    /* max-height: 2px;
-    max-width: 2px; */
-    /* background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
-    border-left: 4px solid rgba(255, 254, 234, 0.913); */
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
 
 }
 
 #sq1 {
-    background-color: black;
-    border-radius: 50%;
-    border-top: 40px solid rgba(255, 254, 234, 0.913);
-    border-right: 40px solid rgba(255, 255, 255, 0.913);
-    border-bottom: 40px solid rgba(255, 255, 255, 0.913);
-    border-left: 40px solid rgba(255, 254, 234, 0.913);
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
 }
 
 #sq2 {
-    background-color: black;
-    border-radius: 50%;
-    border-top: 40px solid rgba(255, 254, 234, 0.913);
-    border-right: 40px solid rgba(255, 255, 255, 0.913); 
-    border-bottom: 40px solid rgba(255, 255, 255, 0.913);
-    border-left: 40px solid rgba(255, 254, 234, 0.913);
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913); 
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
 }
 
 #sq3 {
-    background-color: black;
-    border-radius: 50%;
-    border-top: 40px solid rgba(255, 254, 234, 0.913);
-    border-right: 40px solid rgba(255, 255, 255, 0.913); 
-    border-bottom: 40px solid rgba(255, 255, 255, 0.913);
-    border-left: 40px solid rgba(255, 254, 234, 0.913);
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913); 
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
 }
 
 #sq4 {
-    background-color: black;
-    border-radius: 50%;
-    border-top: 40px solid rgba(255, 254, 234, 0.913);
-    border-right: 40px solid rgba(255, 255, 255, 0.913);
-    border-bottom: 40px solid rgba(255, 255, 255, 0.913);
-    border-left: 40px solid rgba(255, 254, 234, 0.913);
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
 }
 
 #sq5 {
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -175,9 +126,6 @@ section.board4{
 }
 
 #sq6 {
-    
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -185,8 +133,6 @@ section.board4{
 }
 
 #sq7 {
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -194,17 +140,14 @@ section.board4{
 }
 
 #sq8 {
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
     border-left: 4px solid rgba(255, 254, 234, 0.913);
+    background-color: black;
 }
 
 #sq9 {
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -212,8 +155,6 @@ section.board4{
 }
 
 #sq10 {
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -221,8 +162,6 @@ section.board4{
 }
 
 #sq11 {
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -230,8 +169,6 @@ section.board4{
 }
 
 #sq12 {
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -239,8 +176,6 @@ section.board4{
 }
 
 #sq13 {
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -248,8 +183,6 @@ section.board4{
 }
 
 #sq14 {
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -257,8 +190,6 @@ section.board4{
 }
 
 #sq15 {
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -266,8 +197,6 @@ section.board4{
 }
 
 #sq16 {
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -275,8 +204,6 @@ section.board4{
 }
 
 #sq17 {
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -284,8 +211,6 @@ section.board4{
 }
 
 #sq18 {
-    background-color: black;
-    border-radius: 50%;
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -293,8 +218,13 @@ section.board4{
 }
 
 #sq19 {
-    background-color: black;
-    border-radius: 50%;
+    border-top: 4px solid rgba(255, 254, 234, 0.913);
+    border-right: 4px solid rgba(255, 255, 255, 0.913);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.913);
+    border-left: 4px solid rgba(255, 254, 234, 0.913);
+}
+
+#sq20 {
     border-top: 4px solid rgba(255, 254, 234, 0.913);
     border-right: 4px solid rgba(255, 255, 255, 0.913);
     border-bottom: 4px solid rgba(255, 255, 255, 0.913);
@@ -316,4 +246,12 @@ button:hover {
     background-color: rgba(255, 254, 234, 0.913);
     color: rgba(79, 79, 79);
     cursor: pointer;
+}
+
+.redPiece {
+    background-color: red;
+}
+
+.yellowPiece {
+    background-color: yellow;
 }
