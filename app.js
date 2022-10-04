@@ -12,12 +12,12 @@ let isClicked = false
 ////////////////////////////////
 // Event Listeners Here
 
-// document.querySelector('section.board').addEventListener('click', click)
-document.getElementById('sq15').addEventListener('click', click)
-document.getElementById('sq16').addEventListener('click', click)
-document.getElementById('sq17').addEventListener('click', click)
-document.getElementById('sq18').addEventListener('click', click)
-document.getElementById('sq19').addEventListener('click', click)
+document.querySelector('section.board').addEventListener('click', click)
+// document.getElementById('sq15').addEventListener('click', click)
+// document.getElementById('sq16').addEventListener('click', click)
+// document.getElementById('sq17').addEventListener('click', click)
+// document.getElementById('sq18').addEventListener('click', click)
+// document.getElementById('sq19').addEventListener('click', click)
 playAgain.addEventListener('click', start)
 ////////////////////////////////
 ////////////////////////////////
@@ -26,6 +26,28 @@ start()
 
 function start() {
   board = [
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
     '',
     '',
     '',
@@ -70,11 +92,11 @@ function start() {
   winner = false
 }
 ////////gravity
-function click(event) {
-  isClicked === true
-  // if isClicked ==== true
-  console.log('working')
-}
+// function click(event) {
+//   isClicked === true
+//   // if isClicked ==== true
+//   console.log('working')
+// }
 // let clicked = document.getElementById('sq15')
 // element.addEventListener('click', click)
 
@@ -103,14 +125,15 @@ function click(event) {
 function checkWinner() {
   if (winner === false) {
     if (
-      board[0] + board[1] + board[2] === 3 ||
+      board[0] + board[1] + board[2] + board[3] === 4 ||
       board[0] + board[3] + board[6] === 3 ||
       board[0] + board[4] + board[8] === 3 ||
       board[1] + board[4] + board[7] === 3 ||
       board[2] + board[4] + board[6] === 3 ||
       board[2] + board[5] + board[8] === 3 ||
       board[3] + board[4] + board[5] === 3 ||
-      board[6] + board[7] + board[8] === 3
+      board[6] + board[7] + board[8] === 3 ||
+      board[15] + board[16] + board[17] === 3
     ) {
       message.textContent = 'PLAYER 1 WINS!'
       message.style.color = 'rgba(223, 254, 215, 0.913)'
