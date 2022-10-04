@@ -7,6 +7,7 @@ let winner = false
 const playAgain = document.getElementById('play')
 const message = document.getElementById('message')
 const counter = document.getElementById('counter')
+let isClicked = false
 
 ////////////////////////////////
 // Event Listeners Here
@@ -68,9 +69,16 @@ function start() {
   count = 0
   winner = false
 }
+////////gravity
+function click(event) {
+  isClicked === true
+  // if isClicked ==== true
+  console.log('working')
+}
+// let clicked = document.getElementById('sq15')
+// element.addEventListener('click', click)
 
-function buttonClick() {}
-
+/////////////
 function gameOver() {
   return (count === 9 && winner === false) || winner === true
 }
