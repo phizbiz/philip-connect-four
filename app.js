@@ -1,175 +1,150 @@
-let colors = ['red', 'yellow']
-const colorsLength = colors.length
-let button = document.getElementById('btn1')
-
-button.addEventListener('click', function () {
-  const randomColor = colors[Math.floor(Math.random() * colors.length)]
-  sq16.style.background = randomColor
-  sq12.style.background = randomColor
-  sq8.style.background = randomColor
-  sq4.style.background = randomColor
-})
-
-// button.addEventListener('click', function () {
-//   if player_one
-//   const randomColor = colors[Math.floor(Math.random() * colors.length)]
-//   sq16.style.background = randomColor
-//   sq12.style.background = randomColor
-//   sq8.style.background = randomColor
-//   sq4.style.background = randomColor
-// })
-
-// function dropPiece() {
-//   let sq = document.getElementById[('sq4', 'sq8', 'sq12', 'sq16')]
-//   if (sq16.style.background === 'black') {
-//     sq16.style.background = randomColor
-//   } else if (sq12.style.background === 'black') {
-//     sq12.style.background = randomColor
-//   } else if (sq8.style.background === 'black') {
-//     sq8.style.background = randomColor
-//   } else {
-//     sq4.style.background = randomColor
-//   }
-// }
-// dropPiece()
-
-// let color = ['#FFFF00', '#FF0000']
-// let i = 0
-// document.querySelector('button').addEventListener('click', function () {
-//   i = 1 < color.length ? ++i : 0
-//   document.querySelector('div').style.background = color[i]
-// })
-//////////////
-//Tuesday
-///////////////////
-// let playerR = 'R'
-// let playerY = 'Y'
-// let playerOne = playerR
-// let board
-// let gameOver = false
-// let rows = 5
-// let columns = 4
-// const sq0 = document.getElementById('sq0')
-// const square = document.getElementById('square')
-
-// sq0.addEventListener('click', () => {
-//   document.querySelector('square')('red-piece')
-//   console.log('works')
-// })
-
-////////////
-// startGame()
-
-// function startGame() {
-//   let square = document.createElement('div')
-//   //   square.id = div.id
-//   square.classList.add('square')
-//   square.addEventListener('click', assignPiece)
-//   document.getElementById('game').append(square)
-//   console.log('working')
-// }
-// // assignPiece()
-// function assignPiece() {
-//   //   if (gameOver) {
-//   //     return
-//   //   }
-
-//   //  for (var i = 4; i > 0; i--) { alert(i); }
-//   let square = this
-//   if ((playerOne = playerR)) {
-//     square.classList.add('red-circle')
-//   } else {
-//     square.classList.add('yellow-circle')
-//   }
-// }
-
-// function setPiece {
-//     if (gameOver) {
-//         return;
-//     }
-// let coords =
-
-// }
-
-// function click() {
-//    document.getElementById(".square").
-// }
-
-/////////////////////////////////////
-//old
-///////
 // Global Variables Here
-// let player
-// let goFirst = -1
-// let board
-// let count = 0
-// let winner = false
-// const playAgain = document.getElementById('play')
-// const message = document.getElementById('message')
-// const counter = document.getElementById('counter')
+let player
+let goFirst = -1
+let board
+let count = 0
+let winner = false
+const playAgain = document.getElementById('play')
+const message = document.getElementById('message')
+const counter = document.getElementById('counter')
 
+////////////////////////////////
 // Event Listeners Here
 
 // document.querySelector('section.board').addEventListener('click', click)
-// playAgain.addEventListener('click', start)
+document.getElementById('sq15').addEventListener('click', click)
+document.getElementById('sq16').addEventListener('click', click)
+document.getElementById('sq17').addEventListener('click', click)
+document.getElementById('sq18').addEventListener('click', click)
+document.getElementById('sq19').addEventListener('click', click)
+playAgain.addEventListener('click', start)
+////////////////////////////////
+////////////////////////////////
+// Functions For Game Logic Here
+start()
 
-/// click
-// start()
-// function start() {
-//   board = ['', '', '', '', '']
-//   goFirst *= -1
-//   player = goFirst
+function start() {
+  board = [
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    ''
+  ]
+  goFirst *= -1
+  player = goFirst
 
-//   if (goFirst === 1) {
-//     message.textContent = "X'S GO FIRST!"
-//   } else {
-//     message.textContent = "O'S GO FIRST!"
-//   }
+  if (goFirst === 1) {
+    message.textContent = 'PLAYER 1 GO FIRST!'
+  } else {
+    message.textContent = 'PLAYER 2 GO FIRST!'
+  }
 
-//   message.style.color = 'rgba(255, 254, 234, 0.913)'
-//   playAgain.style.visibility = 'hidden'
+  message.style.color = 'rgba(255, 254, 234, 0.913)'
+  playAgain.style.visibility = 'hidden'
 
-//   document
-//     .querySelectorAll('section.board')[0]
-//     .childNodes.forEach((element) => {
-//       element.textContent = ''
-//       element.color = ''
-//     })
+  document
+    .querySelectorAll('section.board')[0]
+    .childNodes.forEach((element) => {
+      element.textContent = ''
+      element.color = ''
+    })
 
-//   count = 0
-//   winner = false
-// }
+  count = 0
+  winner = false
+}
 
-// function click(event) {
-//   let square = parseInt(event.target.id.replace('sq', ''))
-//   if (board[square] !== '') return
-//   // checkWinner()
-//   render(square)
-// }
+function buttonClick() {}
+
+function gameOver() {
+  return (count === 9 && winner === false) || winner === true
+}
+
+function click(event) {
+  let square = parseInt(event.target.id.replace('sq', ''))
+  if (board[square] !== '') return
+  checkWinner()
+  render(square)
+}
 
 // function randomClick() {
 //   let square = Math.floor(Math.random() * 10)
 //   if (board[square] !== '') {
 //     randomClick()
 //   } else {
-//     // checkWinner()
+//     checkWinner()
 //     render(square)
 //   }
 // }
-// render(square)
 
-// function render(square) {
-//   if (winner === false) {
-//     markSpot = document.getElementById(`sq${square}`)
-//     board[square] = player
-//     if (player === 1) {
-//       markSpot.textContent = 'X'
-//       markSpot.style.color = 'rgba(223, 254, 215, 0.913)'
-//       message.textContent = "O'S TURN!"
-//     } else {
-//       markSpot.textContent = 'O'
-//       markSpot.style.color = 'rgba(198, 224, 255, 0.913)'
-//       message.textContent = "X'S TURN!"
-//     }
-//   }
-// }
+function checkWinner() {
+  if (winner === false) {
+    if (
+      board[0] + board[1] + board[2] === 3 ||
+      board[0] + board[3] + board[6] === 3 ||
+      board[0] + board[4] + board[8] === 3 ||
+      board[1] + board[4] + board[7] === 3 ||
+      board[2] + board[4] + board[6] === 3 ||
+      board[2] + board[5] + board[8] === 3 ||
+      board[3] + board[4] + board[5] === 3 ||
+      board[6] + board[7] + board[8] === 3
+    ) {
+      message.textContent = 'PLAYER 1 WINS!'
+      message.style.color = 'rgba(223, 254, 215, 0.913)'
+      winner = true
+    }
+    if (
+      board[0] + board[1] + board[2] === -3 ||
+      board[0] + board[3] + board[6] === -3 ||
+      board[0] + board[4] + board[8] === -3 ||
+      board[1] + board[4] + board[7] === -3 ||
+      board[2] + board[4] + board[6] === -3 ||
+      board[2] + board[5] + board[8] === -3 ||
+      board[3] + board[4] + board[5] === -3 ||
+      board[6] + board[7] + board[8] === -3
+    ) {
+      message.textContent = 'PLAYER 2 WINS!'
+      message.style.color = 'rgba(198, 224, 255, 0.913)'
+      winner = true
+    }
+  }
+}
+
+function render(square) {
+  if (winner === false) {
+    markSpot = document.getElementById(`sq${square}`)
+    board[square] = player
+    if (player === 1) {
+      markSpot.style.background = 'red'
+      markSpot.style.color = 'rgba(255,0,0)'
+      message.textContent = "PLAYER 2'S TURN!"
+    } else {
+      markSpot.style.background = 'yellow'
+      markSpot.style.color = 'rgba(198, 224, 255, 0.913)'
+      message.textContent = "PLAYER 1'S TURN!"
+    }
+  }
+  player *= -1
+  checkWinner()
+  count++
+  if (count === 9 && winner === false) {
+    message.textContent = 'DRAW!'
+    message.style.color = 'rgba(255, 217, 223, 0.913)'
+  }
+  playAgain.style.visibility = gameOver() ? 'visible' : 'hidden'
+}

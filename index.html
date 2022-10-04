@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src ="app.js" defer></script>
+    <script src="app.js" defer></script>
     <title>Connect Four</title>
 </head>
-<body>
-    <div id="top-pad"></div>
+<body class="stars">
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
     <h1>Connect Four</h1>
     <div id="game">
         <section class="board">
-       <div id="sq0" class="square"><button id="btn1">drop</button></div>
-        <div id="sq1" class="square"> <button>drop</button></div>
-        <div id="sq2" class="square"><button>drop</button></div>
-        <div id="sq3" class="square"><button>drop</button></div>
+       <div id="sq0" class="square"></div>
+        <div id="sq1" class="square"></div>
+        <div id="sq2" class="square"></div>
+        <div id="sq3" class="square"></div>
         <div id="sq4" class="square"></div>
         <div id="sq5" class="square"></div>
         <div id="sq6" class="square"></div>
@@ -33,6 +34,7 @@
         <div id="sq17" class="square"></div>
         <div id="sq18" class="square"></div>
         <div id="sq19" class="square"></div>
+        </section>
 <section class="restart">
     <h2 id="message"></h2>
     <button id="play">PLAY AGAIN?</button>
