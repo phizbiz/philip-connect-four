@@ -112,7 +112,116 @@ function click(event) {
   if (board[square] !== '') return
   checkWinner()
   render(square)
-  document.getElementById('sq28').addEventListener('click', click)
+  //bottom row
+  if (board[35]) {
+    document.getElementById('sq28').addEventListener('click', click)
+  }
+  if (board[36]) {
+    document.getElementById('sq29').addEventListener('click', click)
+  }
+  if (board[37]) {
+    document.getElementById('sq30').addEventListener('click', click)
+  }
+  if (board[38]) {
+    document.getElementById('sq31').addEventListener('click', click)
+  }
+  if (board[39]) {
+    document.getElementById('sq32').addEventListener('click', click)
+  }
+  if (board[40]) {
+    document.getElementById('sq33').addEventListener('click', click)
+  }
+  if (board[41]) {
+    document.getElementById('sq35').addEventListener('click', click)
+  }
+  //row 2
+  if (board[28]) {
+    document.getElementById('sq21').addEventListener('click', click)
+  }
+  if (board[29]) {
+    document.getElementById('sq22').addEventListener('click', click)
+  }
+  if (board[30]) {
+    document.getElementById('sq23').addEventListener('click', click)
+  }
+  if (board[31]) {
+    document.getElementById('sq24').addEventListener('click', click)
+  }
+  if (board[32]) {
+    document.getElementById('sq25').addEventListener('click', click)
+  }
+  if (board[33]) {
+    document.getElementById('sq26').addEventListener('click', click)
+  }
+  if (board[34]) {
+    document.getElementById('sq27').addEventListener('click', click)
+  }
+  //row 3
+  if (board[21]) {
+    document.getElementById('sq14').addEventListener('click', click)
+  }
+  if (board[22]) {
+    document.getElementById('sq15').addEventListener('click', click)
+  }
+  if (board[23]) {
+    document.getElementById('sq16').addEventListener('click', click)
+  }
+  if (board[24]) {
+    document.getElementById('sq17').addEventListener('click', click)
+  }
+  if (board[25]) {
+    document.getElementById('sq18').addEventListener('click', click)
+  }
+  if (board[26]) {
+    document.getElementById('sq19').addEventListener('click', click)
+  }
+  if (board[27]) {
+    document.getElementById('sq20').addEventListener('click', click)
+  }
+  //row 4
+  if (board[14]) {
+    document.getElementById('sq7').addEventListener('click', click)
+  }
+  if (board[15]) {
+    document.getElementById('sq8').addEventListener('click', click)
+  }
+  if (board[16]) {
+    document.getElementById('sq9').addEventListener('click', click)
+  }
+  if (board[17]) {
+    document.getElementById('sq10').addEventListener('click', click)
+  }
+  if (board[18]) {
+    document.getElementById('sq11').addEventListener('click', click)
+  }
+  if (board[19]) {
+    document.getElementById('sq12').addEventListener('click', click)
+  }
+  if (board[20]) {
+    document.getElementById('sq13').addEventListener('click', click)
+  }
+  //row 5
+  if (board[7]) {
+    document.getElementById('sq0').addEventListener('click', click)
+  }
+  if (board[8]) {
+    document.getElementById('sq1').addEventListener('click', click)
+  }
+  if (board[9]) {
+    document.getElementById('sq2').addEventListener('click', click)
+  }
+  if (board[10]) {
+    document.getElementById('sq3').addEventListener('click', click)
+  }
+  if (board[11]) {
+    document.getElementById('sq4').addEventListener('click', click)
+  }
+  if (board[12]) {
+    document.getElementById('sq5').addEventListener('click', click)
+  }
+  if (board[13]) {
+    document.getElementById('sq6').addEventListener('click', click)
+  }
 }
 
 // function randomClick() {
