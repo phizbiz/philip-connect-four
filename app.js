@@ -5,9 +5,10 @@ let board
 let count = 0
 let winner = false
 const playAgain = document.getElementById('play')
+// const playAgain = style.background('')
 const message = document.getElementById('message')
-const counter = document.getElementById('counter')
-let isClicked = false
+// const counter = document.getElementById('counter')
+// let isClicked = false
 
 ////////////////////////////////
 // Event Listeners Here
@@ -21,6 +22,10 @@ document.getElementById('sq39').addEventListener('click', click)
 document.getElementById('sq40').addEventListener('click', click)
 document.getElementById('sq41').addEventListener('click', click)
 playAgain.addEventListener('click', start)
+playAgain.addEventListener('click', clearBoard)
+
+// playAgain.getElementsByClassName('square')addEventListener('click', '')
+// document.getElementById('play').addEventListener('click', background-color'')
 ////////////////////////////////
 ////////////////////////////////
 // Functions For Game Logic Here
@@ -71,6 +76,7 @@ function start() {
     '',
     ''
   ]
+  // square.style.background-color = ''
   goFirst *= -1
   player = goFirst
 
@@ -93,6 +99,13 @@ function start() {
   count = 0
   winner = false
 }
+
+function clearBoard() {
+  board.forEach((n, i) => {
+    clearBoard[i] = markSpot.style.background = ''
+  })
+  // ((markSpot.game.style.color = ''))
+}
 ////////gravity
 // function click(event) {
 //   if (board[square] === true) {
@@ -106,6 +119,14 @@ function start() {
 function gameOver() {
   return (count === 42 && winner === false) || winner === true
 }
+
+// playAgain() {
+//   onclick clearBoard
+// }
+
+// $('play').click(function () {
+//   $('play').css('background', 'green')
+// })
 
 function click(event) {
   let square = parseInt(event.target.id.replace('sq', ''))
@@ -132,7 +153,7 @@ function click(event) {
     document.getElementById('sq33').addEventListener('click', click)
   }
   if (board[41]) {
-    document.getElementById('sq35').addEventListener('click', click)
+    document.getElementById('sq34').addEventListener('click', click)
   }
   //row 2
   if (board[28]) {
