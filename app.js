@@ -12,14 +12,14 @@ let isClicked = false
 ////////////////////////////////
 // Event Listeners Here
 
-document.querySelector('section.board').addEventListener('click', click)
-// document.getElementById('sq35').addEventListener('click', click)
-// document.getElementById('sq36').addEventListener('click', click)
-// document.getElementById('sq37').addEventListener('click', click)
-// document.getElementById('sq38').addEventListener('click', click)
-// document.getElementById('sq39').addEventListener('click', click)
-// document.getElementById('sq40').addEventListener('click', click)
-// document.getElementById('sq41').addEventListener('click', click)
+// document.querySelector('section.board').addEventListener('click', click)
+document.getElementById('sq35').addEventListener('click', click)
+document.getElementById('sq36').addEventListener('click', click)
+document.getElementById('sq37').addEventListener('click', click)
+document.getElementById('sq38').addEventListener('click', click)
+document.getElementById('sq39').addEventListener('click', click)
+document.getElementById('sq40').addEventListener('click', click)
+document.getElementById('sq41').addEventListener('click', click)
 playAgain.addEventListener('click', start)
 ////////////////////////////////
 ////////////////////////////////
@@ -95,16 +95,16 @@ function start() {
 }
 ////////gravity
 // function click(event) {
-//   isClicked === true
-//   // if isClicked ==== true
-//   console.log('working')
+//   if (board[square] === true) {
+//     console.log('working')
+//   }
 // }
 // let clicked = document.getElementById('sq15')
 // element.addEventListener('click', click)
 
 /////////////
 function gameOver() {
-  return (count === 9 && winner === false) || winner === true
+  return (count === 42 && winner === false) || winner === true
 }
 
 function click(event) {
@@ -112,6 +112,7 @@ function click(event) {
   if (board[square] !== '') return
   checkWinner()
   render(square)
+  document.getElementById('sq28').addEventListener('click', click)
 }
 
 // function randomClick() {
@@ -312,7 +313,7 @@ function render(square) {
   player *= -1
   checkWinner()
   count++
-  if (count === 9 && winner === false) {
+  if (count === 42 && winner === false) {
     message.textContent = 'DRAW!'
     message.style.color = 'rgba(255, 217, 223, 0.913)'
   }
