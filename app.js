@@ -5,10 +5,7 @@ let board
 let count = 0
 let winner = false
 const playAgain = document.getElementById('play')
-// const playAgain = style.background('')
 const message = document.getElementById('message')
-// const counter = document.getElementById('counter')
-// let isClicked = false
 
 ////////////////////////////////
 // Event Listeners Here
@@ -24,8 +21,6 @@ document.getElementById('sq41').addEventListener('click', click)
 playAgain.addEventListener('click', start)
 playAgain.addEventListener('click', clearBoard)
 
-// playAgain.getElementsByClassName('square')addEventListener('click', '')
-// document.getElementById('play').addEventListener('click', background-color'')
 ////////////////////////////////
 ////////////////////////////////
 // Functions For Game Logic Here
@@ -76,7 +71,7 @@ function start() {
     '',
     ''
   ]
-  // square.style.background-color = ''
+
   goFirst *= -1
   player = goFirst
 
@@ -103,30 +98,13 @@ function start() {
 function clearBoard() {
   board.forEach((n, i) => {
     clearBoard[i] = markSpot.style.background = ''
+    location.reload()
   })
-  // ((markSpot.game.style.color = ''))
 }
-////////gravity
-// function click(event) {
-//   if (board[square] === true) {
-//     console.log('working')
-//   }
-// }
-// let clicked = document.getElementById('sq15')
-// element.addEventListener('click', click)
 
-/////////////
 function gameOver() {
   return (count === 42 && winner === false) || winner === true
 }
-
-// playAgain() {
-//   onclick clearBoard
-// }
-
-// $('play').click(function () {
-//   $('play').css('background', 'green')
-// })
 
 function click(event) {
   let square = parseInt(event.target.id.replace('sq', ''))
@@ -244,16 +222,6 @@ function click(event) {
     document.getElementById('sq6').addEventListener('click', click)
   }
 }
-
-// function randomClick() {
-//   let square = Math.floor(Math.random() * 10)
-//   if (board[square] !== '') {
-//     randomClick()
-//   } else {
-//     checkWinner()
-//     render(square)
-//   }
-// }
 
 function checkWinner() {
   if (winner === false) {
