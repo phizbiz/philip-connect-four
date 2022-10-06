@@ -253,16 +253,13 @@ let checkWinner = () => {
       board[17] + board[24] + board[31] + board[38] === 4 ||
       board[4] + board[11] + board[18] + board[25] === 4 ||
       board[11] + board[18] + board[25] + board[32] === 4 ||
-      board[18] + board[25] + board[32] + board[38] === 4 ||
+      board[18] + board[25] + board[32] + board[39] === 4 ||
       board[5] + board[12] + board[19] + board[26] === 4 ||
       board[12] + board[19] + board[26] + board[33] === 4 ||
-      board[19] + board[26] + board[33] + board[39] === 4 ||
+      board[19] + board[26] + board[33] + board[40] === 4 ||
       board[6] + board[13] + board[20] + board[27] === 4 ||
       board[13] + board[20] + board[27] + board[34] === 4 ||
-      board[20] + board[27] + board[34] + board[40] === 4 ||
-      board[7] + board[14] + board[21] + board[28] === 4 ||
-      board[14] + board[21] + board[28] + board[35] === 4 ||
-      board[21] + board[28] + board[35] + board[41] === 4 ||
+      board[20] + board[27] + board[34] + board[41] === 4 ||
       //diagonal left
 
       board[3] + board[9] + board[15] + board[21] === 4 ||
@@ -339,13 +336,10 @@ let checkWinner = () => {
       board[18] + board[25] + board[32] + board[38] === -4 ||
       board[5] + board[12] + board[19] + board[26] === -4 ||
       board[12] + board[19] + board[26] + board[33] === -4 ||
-      board[19] + board[26] + board[33] + board[39] === -4 ||
+      board[19] + board[26] + board[33] + board[40] === -4 ||
       board[6] + board[13] + board[20] + board[27] === -4 ||
       board[13] + board[20] + board[27] + board[34] === -4 ||
-      board[20] + board[27] + board[34] + board[40] === -4 ||
-      board[7] + board[14] + board[21] + board[28] === -4 ||
-      board[14] + board[21] + board[28] + board[35] === -4 ||
-      board[21] + board[28] + board[35] + board[41] === -4 ||
+      board[20] + board[27] + board[34] + board[41] === -4 ||
       //diagonal left
 
       board[3] + board[9] + board[15] + board[21] === -4 ||

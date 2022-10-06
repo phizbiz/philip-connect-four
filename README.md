@@ -33,7 +33,7 @@
   -Deploy your game on surge
   -Play and enjoy :)
 
-![](https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/310074619_637155967860123_8171299587697702227_n.jpg?stp=dst-jpg_s720x720&_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=ususCLuPMvMAX-5j1Wa&_nc_ht=scontent-iad3-2.xx&oh=00_AT-R0DJU8NvbqhD1SDZOIgWEbVshyTO0d73wZ1neLYoeqg&oe=6343E386)
+![Alt text](https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/310074619_637155967860123_8171299587697702227_n.jpg?stp=dst-jpg_s720x720&_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=ususCLuPMvMAX-5j1Wa&_nc_ht=scontent-iad3-2.xx&oh=00_AT-R0DJU8NvbqhD1SDZOIgWEbVshyTO0d73wZ1neLYoeqg&oe=6343E386 'Screenshot')
 
 # Credits
 
