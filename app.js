@@ -8,25 +8,10 @@ const playAgain = document.getElementById('play')
 const message = document.getElementById('message')
 
 ////////////////////////////////
-// Event Listeners Here
-
-// document.querySelector('section.board').addEventListener('click', click)
-document.getElementById('sq35').addEventListener('click', click)
-document.getElementById('sq36').addEventListener('click', click)
-document.getElementById('sq37').addEventListener('click', click)
-document.getElementById('sq38').addEventListener('click', click)
-document.getElementById('sq39').addEventListener('click', click)
-document.getElementById('sq40').addEventListener('click', click)
-document.getElementById('sq41').addEventListener('click', click)
-playAgain.addEventListener('click', start)
-playAgain.addEventListener('click', clearBoard)
-
-////////////////////////////////
 ////////////////////////////////
 // Functions For Game Logic Here
-start()
 
-function start() {
+let start = () => {
   board = [
     '',
     '',
@@ -95,18 +80,20 @@ function start() {
   winner = false
 }
 
-function clearBoard() {
+start()
+
+let clearBoard = () => {
   board.forEach((n, i) => {
     clearBoard[i] = markSpot.style.background = ''
     location.reload()
   })
 }
 
-function gameOver() {
+let gameOver = () => {
   return (count === 42 && winner === false) || winner === true
 }
 
-function click(event) {
+let click = (event) => {
   let square = parseInt(event.target.id.replace('sq', ''))
   if (board[square] !== '') return
   checkWinner()
@@ -223,7 +210,7 @@ function click(event) {
   }
 }
 
-function checkWinner() {
+let checkWinner = () => {
   if (winner === false) {
     if (
       //horizontal
@@ -394,7 +381,7 @@ function checkWinner() {
   }
 }
 
-function render(square) {
+let render = (square) => {
   if (winner === false) {
     markSpot = document.getElementById(`sq${square}`)
     board[square] = player
@@ -417,3 +404,15 @@ function render(square) {
   }
   playAgain.style.visibility = gameOver() ? 'visible' : 'hidden'
 }
+
+////////////////////////////////
+// Event Listeners Here
+document.getElementById('sq35').addEventListener('click', click)
+document.getElementById('sq36').addEventListener('click', click)
+document.getElementById('sq37').addEventListener('click', click)
+document.getElementById('sq38').addEventListener('click', click)
+document.getElementById('sq39').addEventListener('click', click)
+document.getElementById('sq40').addEventListener('click', click)
+document.getElementById('sq41').addEventListener('click', click)
+playAgain.addEventListener('click', start)
+playAgain.addEventListener('click', clearBoard)
