@@ -2,6 +2,7 @@
 
 # Project Title
 
+![Alt Text](/Downloads/ConnectFour1.png 'Connect Four')
 Connect Four
 
 # Description
